@@ -32,11 +32,11 @@ class Body extends StatelessWidget {
                   color: Colors.grey,
                   textColor: Colors.black87,
                   onPress: () => Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) => LoginScreen(),
-              ),
-            ),
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoginScreen(),
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -49,7 +49,7 @@ class Body extends StatelessWidget {
             CustomActionText(
               text: "Don't have an account? ",
               actionText: 'sign up',
-              onTap: () => Navigator.pushReplacement(
+              onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => RegisterScreen(),
